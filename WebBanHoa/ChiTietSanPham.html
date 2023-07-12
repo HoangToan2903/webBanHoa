@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Shop hoa tươi của Tôi</title>
+    <link rel="icon" href="img/hoa-sap-ha-noi-1.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/ChiTietSanPham.css">
+    <!-- Favicon-->
+    <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="js/WebBanHoa.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body ng-app="Web207" ng-controller="Web207-ctrl">
+<!-- Navigation-->
+<div class="jumbo ">
+    <nav class="jumbo_nav fixed-top">
+        <div class="jumbo_nav-img">
+            <img class="jumbo_nav-img1" src="img/hoa-sap-ha-noi-1.png" alt="">
+            <img class="jumbo_nav-img2" src="img/logo1.png" alt="">
+        </div>
+        <!-- nut timkiem -->
+        <div class="jumbo_nav-timkiem">
+            <div class="container-1">
+                <span class="icon"><i class="	glyphicon glyphicon-search"></i></span>
+                <input type="search" id="search" placeholder="Search..."/>
+            </div>
+        </div>
+
+        <div class="jumbo_nav-DangNhap">
+            <ul class=" navbar-nav " style="margin-top: 10px;">
+                <a href="#"><span class="glyphicon glyphicon-user"></span> Đăng nhập / </a>
+                <a href="#" style="margin-left: px; "> Đăng ký</span></a>
+                <a href="GioHang.html" style="margin-left: 20px; "><span
+                        class="glyphicon glyphicon-shopping-cart"></span>
+                    Giỏ hàng</a>
+            </ul>
+        </div>
+        <div class="jumbo_nav-menu ">
+            <ul><a href="WebBanHoa.html">Trang chủ</a>
+                <a href="#">Hoa bó</a>
+                <a href="#">Hoa gấu</a>
+                <a href="#">Hộp hoa</a>
+                <a href="#">Hoa khô</a>
+                <a href="#">Qùa tặng</a>
+                <a href="#">Tin tức</a>
+                <a href="#">Liên hệ</a>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- Product section-->
+<div class="container-fluid">
+    <div class="content-wrapper">
+        <!-- <ul class="crumbs">
+            <li>
+                <h4>
+                    <a href="#">Trang chủ</a>
+                </h4>
+            </li>
+            <li>
+                <h3>
+                    <a href="#">Hoa tình yêu </a>
+                </h3>
+            </li>
+            <li>
+                <h2>
+                    <a href="#">GH67</a>
+                </h2>
+            </li>
+        </ul> -->
+        <div class="item-container">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="product col-md-3 service-image-left">
+                        <!-- <center>
+                            <img id="item-display"
+                                src="{{selectedProduct.img}}"alt=""></img>
+                        </center> -->
+                    </div>
+                </div>
+                <div class="col-md-7 gioithieu">
+                    <b>Mã hoa : {{selectedProduct.id}} - Tên hoa : {{selectedProduct.name}} - Số lượng :
+                        {{selectedProduct.quantity}}</b> <br>
+                    <h4>Giá :{{selectedProduct.price}}</h4>
+                    <p class="gia">Giá đã bao gồm 10% VAT</p>
+                    <div class="product-rating"><i class="glyphicon glyphicon-star-empty"></i> <i
+                            class="glyphicon glyphicon-star-empty"></i> <i
+                            class="glyphicon glyphicon-star-empty"></i> <i
+                            class="glyphicon glyphicon-star-empty"></i> <i class="fa fa-star-o"></i></div>
+                    <hr>
+                    <div class="product-price">
+                        Sản phẩm bao gồm: <br>
+                        <p>-Cẩm chướng chùm hồng viên 3</p>
+                        <p>-Cúc calimero hồng : 3</p>
+                        <p>-Hoa Sao tím: 1</p>
+                        <p>-Pink OHara: 1</p>
+                    </div>
+                    <div class="product-stock">Sản phẩm thực nhận có thể khác với hình đại diện trên website (đặc
+                        điểm thủ công và tính chất tự nhiên của hàng nông nghiệp)
+                    </div>
+                    <hr>
+                    <div class="btn-group cart">
+                        <button type="button" class="btn btn-success">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng
+                        </button>
+                    </div>
+                    <div class="btn-group wishlist">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-ok"></span> Mua ngay
+                        </button>
+                    </div>
+                    <br><br>
+                    <div class="uudai">
+                        <h4>Ưu đãi đặc biệt</h4>
+                        <ul class="benefit">
+                            <li>Tặng Banner Hoặc Thiệp (Trị Giá 20.000đ - 50.000đ) Miễn Phí</li>
+                            <li>Giảm Tiếp 3% Cho Đơn Hàng Bạn Tạo ONLINE Lần Thứ 2, 5% Cho Đơn Hàng Bạn Tạo ONLINE
+                                Lần Thứ 6 Và 10% Cho Đơn Hàng Bạn Tạo ONLINE Lần Thứ 12.
+                            </li>
+                            <li>Giao Miễn Phí Trong Nội Thành 63/63 Tỉnh</li>
+                            <li>Giao Gấp Trong Vòng 2 Giờ</li>
+                            <li>Cam Kết 100% Hoàn Lại Tiền Nếu Bạn Không Hài Lòng</li>
+                            <li> Cam Kết Hoa Tươi Trên 3 Ngày</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- dichvu -->
+        <div class="container dichvu">
+            <b class="servivces">TẠI SAO BẠN NÊN DÙNG DỊCH VỤ CỦA CHÚNG TÔI?</b>
+            <div class="dichvu_list">
+                <div class="col-sm-3">
+                    <p><strong><span class="glyphicon glyphicon-tags"></span> Thanh toán</strong></p>
+                    <p>Hỗ trợ thanh toán linh hoạt theo nhiều phương thức.</p>
+                </div>
+                <div class="col-sm-3">
+                    <p><strong><span class="	glyphicon glyphicon-phone-alt"></span> Hộ trợ </strong></p>
+                    <p>Tư vấn online 24/7 nhiệt tình và chuyên nghiệp.</p>
+                </div>
+                <div class="col-sm-3">
+                    <p><strong><span class="glyphicon glyphicon-plane"></span> Vận chuyển</strong></p>
+                    <p>Vận chuyển toàn quốc nhanh chóng và an toàn.</p>
+                </div>
+                <div class="col-sm-3">
+                    <p><strong><span class="glyphicon glyphicon-refresh"></span> Đổi trả</strong></p>
+                    <p>Hoàn tiền - Trả hàng nếu sản phẩm không đúng như mô tả.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- san lien quan -->
+<div class="container khung">
+    <span>Những sản phẩm tương tự</span>
+    <div class="row text-center container slideanim">
+        <div class="list1">
+            <div ng-repeat="product in products" class="col-sm-2 item1">
+                <div class="thumbnail">
+                    <a href="#" class="zoom"><img src="{{product.img}}" alt="Paris" width="400" height="300"> <br>
+                    </a>
+                    <p>Mã hoa : {{product.id}}</p>
+                    <b>Giá : {{product.price}}</b>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- danh gia khách hang -->
+<div class="container well">
+    <h2>Phản hồi của khách hàng</h2>
+    <hr>
+    <!-- Left-aligned media object -->
+    <div class="media">
+        <div class="media-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzaaiJ1XrBsMhZ7obn2ln5w-0ZEp28LN6Mw&usqp=CAU"
+                 class="media-object" style="width:60px">
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Hoang Toan</h4>
+            <p>Hoa rất đẹp và rất thơm </p>
+            <div class="product-rating"><i class="glyphicon glyphicon-star-empty"></i>
+                <i class="glyphicon glyphicon-star-empty"></i> <i class="glyphicon glyphicon-star-empty"></i>
+                <i class="glyphicon glyphicon-star-empty"></i> <i class="glyphicon glyphicon-star-empty"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="media">
+        <div class="media-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzaaiJ1XrBsMhZ7obn2ln5w-0ZEp28LN6Mw&usqp=CAU"
+                 class="media-object" style="width:60px">
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Manh Hung</h4>
+            <p>Giao hàng nhanh, đánh giá 5 sao</p>
+            <div class="product-rating"><i class="glyphicon glyphicon-star-empty"></i>
+                <i class="glyphicon glyphicon-star-empty"></i> <i class="glyphicon glyphicon-star-empty"></i>
+                <i class="glyphicon glyphicon-star-empty"></i> <i class="glyphicon glyphicon-star-empty"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="media">
+        <div class="media-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzaaiJ1XrBsMhZ7obn2ln5w-0ZEp28LN6Mw&usqp=CAU"
+                 class="media-object" style="width:60px">
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Trang Phan</h4>
+            <div class="product-rating"><i class="glyphicon glyphicon-star-empty"></i>
+                <i class="glyphicon glyphicon-star-empty"></i> <i class="glyphicon glyphicon-star-empty"></i>
+                <i class="glyphicon glyphicon-star-empty"></i> <i class="glyphicon glyphicon-star-empty"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="media">
+        <div class="media-left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzaaiJ1XrBsMhZ7obn2ln5w-0ZEp28LN6Mw&usqp=CAU"
+                 class="media-object" style="width:60px">
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">Linh Nguyen</h4>
+            <div class="product-rating"><i class="glyphicon glyphicon-star-empty"></i>
+                <i class="glyphicon glyphicon-star-empty"></i> <i class="glyphicon glyphicon-star-empty"></i>
+                <i class="glyphicon glyphicon-star-empty"></i> <i class="glyphicon glyphicon-star-empty"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="container ">
+        <div class="col-sm-3">
+            <h4 class="h4">LIÊN HỆ</h4>
+            <br>
+            <p class="mau">
+                Address : 75/69 - Đường Phú Diễn - Nam Từ Niêm - Hà Nội
+                <br>
+                <br>
+                Phone : 0337128389
+                <br>
+                <br>
+                Email : toanhd290803@gmail.com
+            </p>
+        </div>
+        <div class="col-sm-3">
+            <h4 class="h4">CHÍNH SÁCH HỖ TRỢ</h4>
+            <br>
+            <p class="mau">
+                Tìm kiếm
+                <br>
+                <br>
+                Giới thiệu
+                <br>
+                <br>
+                Chính sách thanh toán
+                <br>
+                <br>
+                Chính sách vận chuyển
+                <br>
+                <br>
+                Chính sách đổi trả và hoàn tiền
+            </p>
+        </div>
+        <div class="col-sm-3">
+            <h4 class="h4">CHĂM SÓC KHÁCH HÀNG</h4>
+            <br>
+            <p class="mau">
+                Thắc mắc và khiếu lại
+                <br>
+                <br>
+                Cam kết hài lòng 100%
+                <br>
+                <br>
+                Chính sách bảo mật thông tin
+                <br>
+                <br>
+                Chính sách và điều khoản
+                <br>
+                <br>
+                Hướng dẫn đặt hàng
+                <br>
+                <br>
+                Hướng dẫn thanh toán
+            </p>
+        </div>
+        <div class="col-sm-3">
+            <h4 class="h4">LIÊN KẾT VỚI CHÚNG TÔI</h4>
+            <br>
+            <p class="mau">
+                Hãy kết nối với chúng tôi.
+                <br>
+                <br>
+                <span><svg class="span  " xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                           fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                        <svg class="span" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                             class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                        </svg>
+                        <svg class="span" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                             class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                        <svg class="span" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                             class="bi bi-google" viewBox="0 0 16 16">
+                            <path
+                                    d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                        </svg>
+                    </span>
+            </p>
+        </div>
+    </div>
+    <hr class="container mau1 ">
+    <p class="text-center span ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+             class="bi bi-c-circle bo " viewBox="0 0 16 16">
+            <path
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+        </svg>
+        Bản quyền thuộc về tôi. Cung cấp bởi tôi
+    </p>
+</footer>
+</body>
+<!-- <script src="js/WebBanHoa.js"></script>/ -->
+
+</html>

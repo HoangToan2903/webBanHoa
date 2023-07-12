@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop hoa tươi của Tôi</title>
+    <link rel="icon" href="img/hoa-sap-ha-noi-1.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/GioHang.css">
+</head>
+
+<body>
+<!-- navbar -->
+
+<div class="jumbo ">
+    <nav class="jumbo_nav fixed-top">
+        <div class="jumbo_nav-img">
+            <img class="jumbo_nav-img1" src="img/hoa-sap-ha-noi-1.png" alt="">
+            <img class="jumbo_nav-img2" src="img/logo1.png" alt="">
+        </div>
+        <!-- nut timkiem -->
+        <div class="jumbo_nav-timkiem">
+            <div class="container-1">
+                <span class="icon"><i class="	glyphicon glyphicon-search"></i></span>
+                <input type="search" id="search" placeholder="Search..."/>
+            </div>
+        </div>
+        <div class="jumbo_nav-DangNhap">
+            <ul class=" navbar-nav " style="margin-top: 10px;">
+                <a href="#"><span class="glyphicon glyphicon-user"></span> Đăng nhập / </a>
+                <a href="#" style="margin-left: px; "> Đăng ký</span></a>
+                <a href="#" style="margin-left: 20px; "><span class="glyphicon glyphicon-shopping-cart"></span>
+                    Giỏ hàng</a>
+            </ul>
+        </div>
+        <div class="jumbo_nav-menu ">
+            <ul><a href="WebBanHoa.html">Trang chủ</a>
+                <a href="#">Hoa bó</a>
+                <a href="#">Hoa gấu</a>
+                <a href="#">Hộp hoa</a>
+                <a href="#">Hoa khô</a>
+                <a href="#">Qùa tặng</a>
+                <a href="#">Tin tức</a>
+                <a href="#">Liên hệ</a>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- container -->
+<div class="giohang">
+    <h2 class="text-center">Giỏ hàng của bạn</h2>
+    <div class="container">
+        <table id="cart" class="table table-hover table-condensed">
+            <thead>
+            <tr>
+                <th style="width:50%">Tên sản phẩm</th>
+                <th style="width:10%">Giá</th>
+                <th style="width:8%">Số lượng</th>
+                <th style="width:22%" class="text-center">Thành tiền</th>
+                <th style="width:10%"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-th="Product">
+                    <div class="row">
+                        <div class="col-sm-2 hidden-xs"><img
+                                src="https://hoayeuthuong.com/hinh-hoa-tuoi/thumb/hoa-tuoi-hop/12888_only-rose-1.jpg"
+                                alt="Sản phẩm 1" class="img-responsive" width="100">
+                        </div>
+                        <div class="col-sm-10">
+                            <h4 class="nomargin">Mã hoa : JU76</h4>
+                            <p>Mô tả của sản phẩm </p>
+                        </div>
+                    </div>
+                </td>
+                <td data-th="Price">340.000 đ</td>
+                <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                </td>
+                <td data-th="Subtotal" class="text-center">340.000 đ</td>
+                <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="	glyphicon glyphicon-remove">Xóa</i>
+                    </button>
+                    <a href="#">
+                        <butotn class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-eye-open"></i>
+                        </butotn>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td data-th="Product">
+                    <div class="row">
+                        <div class="col-sm-2 hidden-xs"><img
+                                src="https://hoayeuthuong.com/hinh-hoa-tuoi/thumb/gio-hoa-tuoi/8832_gan-ben-em.jpg"
+                                alt="Sản phẩm 1" class="img-responsive" width="100">
+                        </div>
+                        <div class="col-sm-10">
+                            <h4 class="nomargin">Mã hoa : TH65</h4>
+                            <p>Mô tả của sản phẩm </p>
+                        </div>
+                    </div>
+                </td>
+                <td data-th="Price">500.000 đ</td>
+                <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                </td>
+                <td data-th="Subtotal" class="text-center">500.000 đ</td>
+                <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="	glyphicon glyphicon-remove">Xóa</i>
+                    </button>
+                    <a href="#">
+                        <butotn class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-eye-open"></i>
+                        </butotn>
+                    </a>
+
+                </td>
+            </tr>
+            <tr>
+                <td data-th="Product">
+                    <div class="row">
+                        <div class="col-sm-2 hidden-xs"><img
+                                src="https://hoayeuthuong.com/hinh-hoa-tuoi/thumb/binh-hoa-tuoi/13365_ngay-cuoi-tuan-2.jpg"
+                                alt="Sản phẩm 1" class="img-responsive" width="100">
+                        </div>
+                        <div class="col-sm-10">
+                            <h4 class="nomargin">Mã hoa : LO09</h4>
+                            <p>Mô tả của sản phẩm </p>
+                        </div>
+                    </div>
+                </td>
+                <td data-th="Price">500.000 đ</td>
+                <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                </td>
+                <td data-th="Subtotal" class="text-center">500.000 đ</td>
+                <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="	glyphicon glyphicon-remove">Xóa</i>
+                    </button>
+                    <a href="#">
+                        <butotn class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-eye-open"></i>
+                        </butotn>
+                    </a>
+
+                </td>
+            </tr>
+            <tr>
+                <td data-th="Product">
+                    <div class="row">
+                        <div class="col-sm-2 hidden-xs"><img
+                                src="https://hoayeuthuong.com/hinh-hoa-tuoi/thumb/bo-hoa-tuoi/5423_su-quan-tam.jpg"
+                                alt="Sản phẩm 1" class="img-responsive" width="100">
+                        </div>
+                        <div class="col-sm-10">
+                            <h4 class="nomargin">Mã hoa : JH65</h4>
+                            <p>Mô tả của sản phẩm </p>
+                        </div>
+                    </div>
+                </td>
+                <td data-th="Price">500.000 đ</td>
+                <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                </td>
+                <td data-th="Subtotal" class="text-center">500.000 đ</td>
+                <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="	glyphicon glyphicon-remove">Xóa</i>
+                    </button>
+                    <a href="#">
+                        <butotn class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-eye-open"></i>
+                        </butotn>
+                    </a>
+
+                </td>
+            </tr>
+            <tr>
+                <td data-th="Product">
+                    <div class="row">
+                        <div class="col-sm-2 hidden-xs"><img
+                                src="https://hoayeuthuong.com/hinh-hoa-tuoi/thumb/bo-hoa-tuoi/13262_tinh-dau-tho-ngay.jpg"
+                                alt="Sản phẩm 1" class="img-responsive" width="100">
+                        </div>
+                        <div class="col-sm-10">
+                            <h4 class="nomargin">Mã hoa : KJ09</h4>
+                            <p>Mô tả của sản phẩm </p>
+                        </div>
+                    </div>
+                </td>
+                <td data-th="Price">500.000 đ</td>
+                <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                </td>
+                <td data-th="Subtotal" class="text-center">500.000 đ</td>
+                <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="	glyphicon glyphicon-remove">Xóa</i>
+                    </button>
+                    <a href="#">
+                        <butotn class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-eye-open"></i>
+                        </butotn>
+                    </a>
+
+                </td>
+            </tr>
+            <tr>
+                <td data-th="Product">
+                    <div class="row">
+                        <div class="col-sm-2 hidden-xs"><img
+                                src="https://hoayeuthuong.com/hinh-hoa-tuoi/thumb/bo-hoa-tuoi/1961_babys-breath.jpg"
+                                alt="Sản phẩm 1" class="img-responsive" width="100">
+                        </div>
+                        <div class="col-sm-10">
+                            <h4 class="nomargin">Mã hoa : HG65</h4>
+                            <p>Mô tả của sản phẩm </p>
+                        </div>
+                    </div>
+                </td>
+                <td data-th="Price">500.000 đ</td>
+                <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                </td>
+                <td data-th="Subtotal" class="text-center">500.000 đ</td>
+                <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="	glyphicon glyphicon-remove">Xóa</i>
+                    </button>
+                    <a href="#">
+                        <butotn class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-eye-open"></i>
+                        </butotn>
+                    </a>
+
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr class="visible-xs">
+                <td class="text-center"><strong>Tổng 840.000 đ</strong>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="WebBanHoa.html" class="btn "
+                       style="background-color: rgb(241, 152, 210); color: black;"><i
+                        class="fa fa-angle-left"></i>
+                    Tiếp tục mua hàng</a>
+                </td>
+                <td colspan="2" class="hidden-xs"></td>
+                <td class="hidden-xs text-center"><strong>Tổng tiền 500.000 đ</strong>
+                </td>
+                <td><a href="#" class="btn  btn-block"
+                    <button type="button" class="btn btn-info btn-lg"
+                            data-toggle="modal" data-target="#myModal"
+                            style="background-color:rgb(241, 152, 210) ; color: black;">Đặt hàng
+                    </button>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<!-- Thanh toán -->
+<div class="modal fade from" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Thanh Toán</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="well thongtin">
+                    <h4>Thông tin khách hàng</h4>
+                    Họ tên : <input type="text" name="" id="" placeholder="Vui lòng nhập tên...">
+                    Số điện thoại : <input type="text" name="" id="" placeholder="Vui lòng nhập SĐT...">
+                    <br>
+                    <br>
+                    Địa chỉ : <input class="diachi" type="text" name="" id=""
+                                     placeholder="Vui lòng nhập địa chỉ...">
+                </div>
+                <div class="well thongtin">
+                    <h4>Thông tin sản phẩm</h4>
+                    <div class="row chitiet">
+                        <div class="col-sm-2 hidden-xs"><img
+                                src="https://hoayeuthuong.com/hinh-hoa-tuoi/thumb/bo-hoa-tuoi/1961_babys-breath.jpg"
+                                alt="Sản phẩm 1" class="img-responsive" width="100">
+                        </div>
+                        <div class="col-sm-6">
+                            <h4 class="nomargin">Mã hoa : HG65</h4>
+                            <p>Số lượng : 2</p>
+
+
+                        </div>
+                        <div class="col-sm-4" class="vanchuyen">
+                            <td data-th="Price">Tổng tiền: 1.000.000 đ</td>
+                            <p data-th="Subtotal">Phí Ship : 30.000 đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="disabledSelect" class="col-sm-3 control-label"><span
+                            class="glyphicon glyphicon-euro"></span> Chọn phương thức thanh toán</label>
+                    <div class="col-sm-8">
+                        <select id="disabledSelect" class="form-control">
+                            <option>--All--</option>
+                            <option>Thanh toán khi nhận hàng</option>
+                            <option>Liên kết tài khoản ngân hàng</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="margin-top: 100px;">
+                    <div class="col-sm-8">
+                        <b>Tổng thanh toán : 1.030.000đ </b>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" data-toggle="modal1"
+                            data-target="#myModal1">Thanh toán
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/schema/data/jaxb">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .khoangcach {
+    margin-top: 20px;
+}
+.mau2 {
+    background-color: #e6e6e6;
+    width: 85%;
+    height: 800px;
+
+}
+.hieuung {
+    float: none;
+    clear: both;
+    width: 100%;
+    margin: 10% auto;
+    background: #eee;
+}
+
+.hieuung ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hieuung li {
+    float: none;
+    width: 100%;
+}
+
+.hieuung li a {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border-left: 5px solid;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    color: #444;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.hieuung li a:hover {
+    border-bottom: 0px;
+    color: #fff;
+}
+
+.hieuung li:first-child a {
+    border-left: 10px solid #3498db;
+}
+
+.hieuung li:nth-child(2) a {
+    border-left: 10px solid #ffd071;
+}
+
+.hieuung li:nth-child(3) a {
+    border-left: 10px solid #f0776c;
+}
+
+.hieuung li:last-child a {
+    border-left: 10px solid #1abc9c;
+}
+
+.hieuung li a:after {
+    content: "";
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0px;
+    position: absolute;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    z-index: -1;
+}
+
+.hieuung li a:hover:after {
+    width: 100%;
+}
+
+.hieuung li:first-child a:after {
+    background: #3498db;
+}
+
+.hieuung li:nth-child(2) a:after {
+    background: #ffd071;
+}
+
+.hieuung li:nth-child(3) a:after {
+    background: #f0776c;
+}
+
+.hieuung li:last-child a:after {
+    background: #1abc9c;
+}
+
+    </style>
+
+</head>
+<body>
+
+<div class="col-sm-2 slides hidden-xs mau2">
+    <div class=" text-center khoangcach"><a href=""><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuxW5dQ_t0mL6ukV-SViFnanXFKfzlrGAEfQ&usqp=CAU"
+            class="img-circle " height="200" width="200" alt="Avatar"></a></div>
+    <hr>
+    <nav class="hieuung">
+        <ul class="nav nav-pills nav-stacked khoangcach ">
+            <li class=""><a href="">Thống kê</a></li>
+            <li class=""><a href="">Quản lý đơn hàng</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Submenu 1-1</a></li>
+                    <li><a href="#">Submenu 1-2</a></li>
+                    <li><a href="#">Submenu 1-3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <br>
+</div>
+</body>
+</html>

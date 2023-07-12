@@ -1,0 +1,83 @@
+.row-add nav {
+    background-color: #e794be;
+    height: 713px;
+    width: 300px;
+}
+
+.row-add {
+    text-align: center;
+}
+
+.row-add li {
+    font-size: 17px;
+}
+
+.well {
+    width: 1190px;
+
+    /* background-color: #f2b6d4; */
+}
+
+.sanpham .them {
+    height: 40px;
+    width: 170px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: rgb(177, 238, 218);
+}
+
+.sanpham hr {
+    color: black;
+}
+
+.timkiem {
+    margin-left: 800px;
+}
+
+/* .timkiem button {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(132, 132, 132);
+    color: white;
+
+} */
+
+/* .timkiem button:hover {
+    background-color: #f9bcda;
+    color: black;
+} */
+
+.timkiem input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(132, 132, 132);
+}
+
+.timkiem ::placeholder {
+    color: whitesmoke;
+    font-style: italic;
+}
+
+.timkiem input:hover {
+    background-color: #f9bcda;
+    /* border: none; */
+}
+
+.bang {
+    margin-top: 50px;
+}
+
+.bang button {
+    background-color: #f9bcda;
+    color: red;
+    border: none;
+    border-radius: 5px;
+}
+
+.bang span {
+    margin-top: 5px;
+}

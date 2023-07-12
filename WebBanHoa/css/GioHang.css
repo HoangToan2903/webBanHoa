@@ -1,0 +1,190 @@
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #f5d5e7;
+    box-shadow: 2px 1px 21px #ee6bb5;
+}
+
+
+/* jumbotron */
+.jumbo {
+    height: 100px;
+    margin-top: 10px;
+    display: block;
+    clear: both;
+    position: relative;
+
+}
+
+.jumbo_nav-img1 {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    margin-left: 170px;
+}
+
+.jumbo_nav-img2 {
+    display: flex;
+    margin-top: -107px;
+    margin-left: 210px;
+}
+
+/* Timkiem */
+.jumbo_nav-timkiem {
+    margin: -115px auto;
+    width: 400px;
+    height: 50px;
+}
+
+.container-1 {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.container-1 input#search {
+    width: 450px;
+    height: 40px;
+    background: #f6a6ba;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #f6a6ba;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.container-1 input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: #f6a6ba;
+}
+
+.container-1 input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #f6a6ba;
+}
+
+.container-1 input#search:-ms-input-placeholder {
+    color: #f6a6ba;
+}
+
+.container-1 .icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 13px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+
+/* .jumbo {
+    box-shadow: 1px 1px 2px #f6a6ba;
+} */
+
+.jumbo_nav-DangNhap ul a {
+    color: rgb(59, 57, 57);
+    text-decoration: none;
+}
+
+.jumbo_nav-DangNhap ul a:hover {
+    color: #f6a6ba;
+
+}
+
+.jumbo_nav-menu {
+    margin-top: 130px;
+    margin-left: 425px;
+    text-decoration: none;
+
+}
+
+.jumbo_nav-menu a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.jumbo_nav-menu a:hover {
+    color: #f23665;
+}
+
+body {
+    background-color: #f8f1f5;
+}
+
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control {
+        width: 20%;
+        display: inline !important;
+    }
+
+    .actions .btn {
+        width: 36%;
+        margin: 1.5em 0;
+    }
+
+    .actions .btn-info {
+        float: left;
+    }
+
+    .actions .btn-danger {
+        float: right;
+    }
+
+    table#cart thead {
+        display: none;
+    }
+
+    table#cart tbody td {
+        display: block;
+        padding: .6rem;
+        min-width: 320px;
+    }
+
+    table#cart tbody tr td:first-child {
+        background: #333;
+        color: #fff;
+    }
+
+    table#cart tbody td:before {
+        content: attr(data-th);
+        font-weight: bold;
+        display: inline-block;
+        width: 8rem;
+    }
+
+    table#cart tfoot td {
+        display: block;
+    }
+
+    table#cart tfoot td .btn {
+        display: block;
+    }
+}
+
+/* Thanh toán */
+.from {
+    /* margin-top: 100px; */
+}
+
+.thongtin .diachi {
+    width: 87%;
+    height: 50px;
+}
+
+.vanchuyen {
+    margin-top: 30px;
+}
